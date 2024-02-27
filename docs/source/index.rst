@@ -16,3 +16,6 @@ Contents
 .. toctree::
 
    usage
+   scope
+   user-requirements
+   elements-of-implementation
