@@ -1,6 +1,12 @@
+.. _scope:
+
 *************
 Project Scope
 *************
+
+.. meta::
+    :description: Detailed description of the scope of the project.
+    :keywords: Scope, Project
 
 Objective
 =========
