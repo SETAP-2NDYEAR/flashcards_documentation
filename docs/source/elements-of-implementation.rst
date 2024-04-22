@@ -1,2 +1,0 @@
-Elements of implementation
-============================

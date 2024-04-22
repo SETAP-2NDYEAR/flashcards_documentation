@@ -6,7 +6,7 @@ User requirements
 
 .. meta::
     :description: User requirements of the project.
-    :keywords: Users, Requirements
+    :keywords: User, Requirements
 
 Account Management
 ==================
