@@ -1,12 +1,13 @@
 .. _login:
+:ref:`index <index>`
 
 **********************
 The Login/Sign Up Page
 **********************
 
 .. meta::
-    :description: Detailed description of the login page of our software.
-    :keywords: Login, Page
+    :description: Detailed description of the login/Register page of our software.
+    :keywords: Login,SignUp Page
 
 The Login page is the first interaction a user has with the software.
 It is the access portal to the site.
@@ -16,7 +17,7 @@ New Users
 =========
 
 A new user has to sign up , providing a valid email and password.
-If the provided email is not in the right format[xxxxx@xxxxx.xxx] , the system will display an error : “Error”.
+If the provided email is not in the right format[xxxxx@xxxxx.xxx] , the system will display an error : “Invalid email”.
 if the provided email has already been used , the system will display an error : “Error”.
 There are no restrictions to the password format.
 

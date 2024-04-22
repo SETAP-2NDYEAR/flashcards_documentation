@@ -1,7 +1,8 @@
-Welcome to the flashcards documentation.
-===================================
+.. _index:
 
-Flash cards
+=======================================
+Welcome to the flashcards documentation
+=======================================
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -15,12 +16,12 @@ Contents
 
 .. toctree::
 
-   usage
-   scope
-   user-requirements
-   main
-   login
-   quiz
+   usage :ref:`usage <usage>`
+   scope :ref:`scope <scope>`
+   user-requirements :ref:`user-requirements <user-requirements>`
+   main :ref:`main <main>`
+   login :ref:`login <login>`
+   quiz :ref:`quiz <quiz>`
 
 
 

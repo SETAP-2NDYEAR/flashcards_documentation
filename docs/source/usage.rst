@@ -1,3 +1,7 @@
+.. _usage:
+:ref:`index <index>`
+
+=====
 Usage
 =====
 

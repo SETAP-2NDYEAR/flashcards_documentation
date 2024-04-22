@@ -1,4 +1,5 @@
 .. _scope:
+:ref:`index <index>`
 
 *************
 Project Scope
