@@ -15,15 +15,17 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-   usage :ref:`usage <usage>`
-   scope :ref:`scope <scope>`
-   user-requirements :ref:`user-requirements <user-requirements>`
-   main :ref:`main <main>`
-   login :ref:`login <login>`
-   quiz :ref:`quiz <quiz>`
-   quizpage :ref:`quizpage <quizpage>`
-   scope :ref:`scope <scope>`
+   usage
+   scope
+   user-requirements
+   main
+   login
+   quiz
+   quizpage
+   scope
 
 
 
