@@ -1,3 +1,6 @@
+.. _quiz:
+:ref:`index <index>`
+
 # Quiz Page Functionality
 
 1. **Initial Page Layout**:
