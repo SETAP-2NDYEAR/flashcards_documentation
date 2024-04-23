@@ -1,6 +1,4 @@
-Certainly! Here's the revised version for better readability on GitHub:
-
-### Quiz Page Functionality
+### Quiz Page Functionality ###
 
 1. **Initial Page Layout**:
    - The quiz page displays a placeholder for a question fetched from the backend, positioned at the top of the page.
