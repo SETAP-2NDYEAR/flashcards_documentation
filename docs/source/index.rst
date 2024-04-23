@@ -22,6 +22,8 @@ Contents
    main :ref:`main <main>`
    login :ref:`login <login>`
    quiz :ref:`quiz <quiz>`
+   quizpage :ref:`quizpage <quizpage>`
+   scope :ref:`scope <scope>`
 
 
 
