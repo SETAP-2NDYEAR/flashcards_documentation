@@ -1,4 +1,4 @@
-## Quiz Page Functionality
+# Quiz Page Functionality
 
 1. **Initial Page Layout**:
    - The quiz page emerges with a placeholder for a question fetched from the backend, positioned at the top of the page.
