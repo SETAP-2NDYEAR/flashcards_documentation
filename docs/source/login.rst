@@ -18,8 +18,9 @@ New Users
 
 A new user has to sign up , providing a valid email and password.
 If the provided email is not in the right format[xxxxx@xxxxx.xxx] , the system will display an error : “Invalid email”.
-if the provided email has already been used , the system will display an error : “Error”.
-There are no restrictions to the password format.
+If the provided email has already been used , the system will display an error : “Email already in use”.
+If the provided password is not at least 6 characters long, the system will display an error : "Password must be 6 characters".
+If the provided username is not less than 25 characters long, the system will display an error : "Name must be 25 characters or less".
 
 Once registration and authentication is completed for a new user.
 The user details are added to the Firebase database and a new set of default flashcards are created.
@@ -86,10 +87,7 @@ Login
 
 An existing user can sign in , providing their valid email and password .
 If the provided email is not in the right format [xxxxx@xxxxx.xxx] , the system will display an error : “Error”.
-If the provided password is incorrect , the system will display an error: “Error”.
-If the user cannot provide their existing password ,they can opt for the “Forgot Password?” Button ,where they will be asked to provide their email and then they will finally be able to retrieve their password.
-However, that is a requirement the software has yet to meet.
-
+If the provided password or email is incorrect , the system will display an error: “The email or password is incorrect”.
 
 .. _loginUser:
 
@@ -115,6 +113,30 @@ However, that is a requirement the software has yet to meet.
       print('Login successful'); // add navigation to correct page here
     } catch (e) {
       print('Error: $e');
+    }
+  }
+
+
+Forgot Password
+---------------
+
+If the user cannot provide their existing password ,they can opt for the “Forgot Password?” Button ,where they will be asked to provide their email and then an automated email will be sent to their inbox , providing a link to reset their password.
+
+.. _sendPasswordResetEmail:
+
+.. code-block:: dart
+
+    Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      setState(() {
+        errorText = 'A password reset link has been sent to your email.';
+      });
+    } catch (e) {
+      print(e);
+      setState(() {
+        errorText = 'Failed to send password reset email. Please try again.';
+      });
     }
   }
 
@@ -204,3 +226,22 @@ AuthenticationBackend Class
         // Function to add user information to Firestore
       }
     }
+
+Forgot Password Function
+------------------------
+
+.. code-block:: dart
+
+    Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      setState(() {
+        errorText = 'A password reset link has been sent to your email.';
+      });
+    } catch (e) {
+      print(e);
+      setState(() {
+        errorText = 'Failed to send password reset email. Please try again.';
+      });
+    }
+  }
